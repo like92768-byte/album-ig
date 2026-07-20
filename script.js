@@ -12,7 +12,8 @@ function renderAll() {
     renderProfile();
     renderNav();
     renderAlbums();
-    renderRandom();
+    renderRandom('all'); // Render semua foto saat awal
+    setupFilters();      // Aktifkan tombol filter
 }
 
 function renderProfile() {
@@ -72,15 +73,42 @@ function renderAlbums() {
     });
 }
 
-function renderRandom() {
+function renderRandom(category = 'all') {
     const grid = document.getElementById('randomGrid');
-    grid.innerHTML = '';
-    DATA.randomPhotos.forEach(src => {
+    grid.innerHTML = ''; // Kosongkan dulu
+
+    // Filter foto berdasarkan kategori
+    const filteredPhotos = category === 'all'
+        ? DATA.randomPhotos
+        : DATA.randomPhotos.filter(photo => photo.category === category);
+
+    // Render foto yang sudah difilter
+    filteredPhotos.forEach(photo => {
         const div = document.createElement('div');
         div.className = 'random-photo glass-panel';
-        div.innerHTML = `<img src="${src}" alt="photo" />`;
-        div.addEventListener('click', () => openPopup(src));
+        div.innerHTML = `<img src="${photo.src}" alt="photo" />`;
+        div.addEventListener('click', () => openPopup(photo.src));
         grid.appendChild(div);
+    });
+}
+
+// Fungsi untuk menangani klik tombol filter
+function setupFilters() {
+    const buttons = document.querySelectorAll('.filter-btn');
+    buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            // 1. Hapus class 'active' dari semua tombol
+            buttons.forEach(b => b.classList.remove('active'));
+            // 2. Tambah class 'active' ke tombol yang diklik
+            btn.classList.add('active');
+
+            // 3. Tampilkan alert glass
+            const categoryName = btn.textContent;
+            showAlert(`Menampilkan: ${categoryName}`);
+
+            // 4. Render ulang foto berdasarkan kategori
+            renderRandom(btn.dataset.category);
+        });
     });
 }
 

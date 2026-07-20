@@ -463,3 +463,37 @@ body::before {
         font-size: 0.8rem;
     }
 }
+
+/* ===== FILTER BUTTONS ===== */
+.filter-container {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+    flex-wrap: wrap;
+    padding-left: 10px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    border-radius: 100px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--glass-border);
+    color: var(--text-dim);
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: all 0.4s var(--ease);
+}
+
+.filter-btn:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text);
+    transform: translateY(-2px);
+}
+
+.filter-btn.active {
+    background: linear-gradient(135deg, rgba(125, 211, 252, 0.25), rgba(168, 85, 247, 0.2));
+    border-color: rgba(125, 211, 252, 0.5);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(125, 211, 252, 0.2);
+}
