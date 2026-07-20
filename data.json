@@ -2,10 +2,10 @@
     "profile": {
         "name": "Afada",
         "photo": "https://i.imgur.com/Av3881k.jpg",
-        "bio": "Aku adalah siswa sekolah Menengah Kejuruan, Aku memiliki hooby membuat sketsa dan web dan sangat tertarik dengan style casual. Aku sering menghabiskan waktu untuk mencari tempat yang santai dan nyaman dilihat oleh mata. ",
+        "bio": "Aku adalah siswa sekolah Menengah Kejuruan, Aku memiliki hooby membuat sketsa dan web, selain itu aku juga sangat tertarik dengan style casual. Aku sering menghabiskan waktu untuk mencari tempat yang santai dan nyaman dilihat oleh mata. ",
         "socials": {
-            "tiktok": "https://tiktok.com/@afada.lali.raup",
-            "whatsapp": "https://wa.me/0895355095040",
+            "tiktok": "https://www.tiktok.com/@afada.2nd?is_from_webapp=1&sender_device=pc",
+            "whatsapp": "https://wa.me/62895355095040?text=hai,%20aku20%mampir20%lewat20%WEB",
             "instagram": "https://www.instagram.com/rayhnafada/"
         }
     },
@@ -14,8 +14,8 @@
             "id": "coffe",
             "name": "Coffes",
             "photos": [
-                "https://i.imgur.com/C3v85kP.jpeg",
                 "https://i.imgur.com/sVNW9SO.jpeg",
+                "https://i.imgur.com/C3v85kP.jpeg",
                 "https://i.imgur.com/D3Nsoov.jpeg"
             ]
         },
@@ -23,14 +23,19 @@
             "id": "style",
             "name": "Style",
             "photos": [
-                "https://i.imgur.com/63Izmcx.jpeg",
-                "https://i.imgur.com/6wA1d26.jpeg"
+                "https://i.imgur.com/6wA1d26.jpeg",
+                "https://i.imgur.com/63Izmcx.jpeg"
             ]
         },
         {
             "id": "sketc",
             "name": "sketc",
-            "photos": []
+            "photos": [
+                "https://i.imgur.com/S4YjMA7.jpeg",
+                "https://i.imgur.com/btjXpr5.jpeg",
+                "https://i.imgur.com/c1jPCSb.jpeg",
+                "https://i.imgur.com/3cwHBHT.jpeg"
+            ]
         }
     ],
     "randomPhotos": [
@@ -55,8 +60,20 @@
             "category": "style"
         },
         {
-            "src": "",
-            "category": ""
+            "src": "https://i.imgur.com/btjXpr5.jpeg",
+            "category": "sketc"
+        },
+        {
+            "src": "https://i.imgur.com/S4YjMA7.jpeg",
+            "category": "sketc"
+        },
+        {
+            "src": "https://i.imgur.com/c1jPCSb.jpeg",
+            "category": "sketc"
+        },
+        {
+            "src": "https://i.imgur.com/3cwHBHT.jpeg",
+            "category": "sketc"
         }
     ]
 }
