@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Afada</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font elegan -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- NAVBAR GLASS -->
+    <nav class="glass-nav">
+        <div class="nav-brand">✦ Rayhan Afada Ahmad Al Hakim</div>
+        <div class="nav-links" id="navLinks">
+            <!-- Diisi otomatis dari album di JSON -->
+        </div>
+    </nav>
+
+    <!-- HEADER / HERO -->
+    <header class="hero glass-panel" id="hero">
+        <div class="profile-wrap">
+            <img id="profilePhoto" class="profile-photo" src="" alt="Profile" />
+            <h1 id="profileName" class="profile-name"></h1>
+            <p id="profileBio" class="profile-bio"></p>
+            <div class="socials" id="socials"></div>
+            <button class="btn-glass" id="seeMeBtn">Lihat Saya ↓</button>
+        </div>
+    </header>
+
+    <!-- ALBUM SECTION -->
+    <section class="section" id="albumSection">
+        <h2 class="section-title">Album</h2>
+        <div class="album-grid" id="albumGrid"></div>
+    </section>
+
+    <!-- RANDOM PHOTOS SECTION -->
+    <section class="section" id="randomSection">
+        <h2 class="section-title">Momen Acak</h2>
+        <div class="random-grid" id="randomGrid"></div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="glass-footer">
+        <p>Terima kasih sudah berkunjung ✨</p>
+    </footer>
+
+    <!-- POPUP FOTO -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content glass-panel">
+            <img id="popupImg" src="" alt="" />
+            <button class="popup-close" id="popupClose">✕</button>
+        </div>
+    </div>
+
+    <!-- ALERT GLASS -->
+    <div class="glass-alert" id="glassAlert">
+        <span id="alertText"></span>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
