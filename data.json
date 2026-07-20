@@ -11,55 +11,45 @@
     },
     "albums": [
         {
-            "id": "nature",
-            "name": "🌿 Alam",
-            "photos": [
-                "https://images.unsplash.com/photo-1447752875215-b2761acb3c5d?w=800",
-                "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?w=800",
-                "https://images.unsplash.com/photo-1441974231531-c6227db76b6e?w=800"
-            ]
+            "id": "coffe",
+            "name": "Coffes",
+            "photos": []
         },
         {
-            "id": "city",
-            "name": "🌃 Kota",
-            "photos": [
-                "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800",
-                "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800"
-            ]
+            "id": "style",
+            "name": "Style",
+            "photos": []
         },
         {
             "id": "portrait",
-            "name": "🎭 Potret",
-            "photos": [
-                "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=800",
-                "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=800"
-            ]
+            "name": "Potret",
+            "photos": []
         }
     ],
     "randomPhotos": [
         {
-            "src": "https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=800",
-            "category": "alam"
+            "src": "",
+            "category": ""
         },
         {
-            "src": "https://images.unsplash.com/photo-1518791841217-8f162c1d1bf2?w=800",
-            "category": "hewan"
+            "src": "",
+            "category": ""
         },
         {
-            "src": "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800",
-            "category": "alam"
+            "src": "",
+            "category": ""
         },
         {
-            "src": "https://images.unsplash.com/photo-1472214103451-9374bd1c798e?w=800",
-            "category": "alam"
+            "src": "",
+            "category": ""
         },
         {
-            "src": "https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800",
-            "category": "kota"
+            "src": "",
+            "category": ""
         },
         {
-            "src": "https://images.unsplash.com/photo-1514565131-fce0801e5785?w=800",
-            "category": "kota"
+            "src": "",
+            "category": ""
         }
     ]
 }
