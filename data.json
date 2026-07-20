@@ -13,7 +13,9 @@
         {
             "id": "coffe",
             "name": "Coffes",
-            "photos": []
+            "photos": [
+                "https://i.imgur.com/C3v85kP.jpeg"
+            ]
         },
         {
             "id": "style",
