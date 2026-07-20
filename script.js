@@ -12,8 +12,9 @@ function renderAll() {
     renderProfile();
     renderNav();
     renderAlbums();
-    renderRandom('all'); // Render semua foto saat awal
-    setupFilters();      // Aktifkan tombol filter
+    renderRandom('all');
+    setupFilters();
+    initTheme(); // Inisialisasi theme toggle
 }
 
 function renderProfile() {
@@ -159,6 +160,40 @@ document.getElementById('seeMeBtn').addEventListener('click', () => {
     showAlert('Selamat menikmati ✨');
     document.getElementById('albumSection').scrollIntoView({ behavior: 'smooth' });
 });
+
+// ===== DARK/LIGHT MODE TOGGLE =====
+function initTheme() {
+    const themeToggle = document.getElementById('themeToggle');
+    const themeIcon = themeToggle.querySelector('.theme-icon');
+
+    // Cek preferensi yang tersimpan di localStorage
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    updateThemeIcon(themeIcon, savedTheme);
+
+    // Event listener untuk toggle
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+
+        // Simpan ke localStorage
+        localStorage.setItem('theme', newTheme);
+        document.documentElement.setAttribute('data-theme', newTheme);
+        updateThemeIcon(themeIcon, newTheme);
+
+        // Tampilkan alert
+        showAlert(`Mode ${newTheme === 'dark' ? 'Gelap' : 'Terang'} diaktifkan ✨`);
+    });
+}
+
+function updateThemeIcon(icon, theme) {
+    // Gunakan emoji yang lebih universal
+    if (theme === 'dark') {
+        icon.textContent = '🌙';  // Bulan untuk dark mode
+    } else {
+        icon.textContent = '☀️';  // Matahari untuk light mode
+    }
+}
 
 // ===== INIT =====
 loadData();
