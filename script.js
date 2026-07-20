@@ -73,17 +73,29 @@ function renderAlbums() {
         grid.appendChild(card);
     });
 }
+// Fungsi untuk mengacak array (Fisher-Yates Shuffle)
+function shuffleArray(array) {
+    const shuffled = [...array]; // Copy array agar tidak mengubah data asli
+    for (let i = shuffled.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+}
 
 function renderRandom(category = 'all') {
     const grid = document.getElementById('randomGrid');
     grid.innerHTML = ''; // Kosongkan dulu
 
     // Filter foto berdasarkan kategori
-    const filteredPhotos = category === 'all'
+    let filteredPhotos = category === 'all'
         ? DATA.randomPhotos
         : DATA.randomPhotos.filter(photo => photo.category === category);
 
-    // Render foto yang sudah difilter
+    // ACAK foto sebelum ditampilkan!
+    filteredPhotos = shuffleArray(filteredPhotos);
+
+    // Render foto yang sudah diacak
     filteredPhotos.forEach(photo => {
         const div = document.createElement('div');
         div.className = 'random-photo glass-panel';
