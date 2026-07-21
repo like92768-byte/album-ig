@@ -2,7 +2,7 @@
     "profile": {
         "name": "Afada",
         "photo": "https://i.imgur.com/Av3881k.jpg",
-        "bio": "Aku adalah siswa sekolah Menengah Kejuruan, Aku memiliki hooby membuat sketsa dan web, selain itu aku juga sangat tertarik dengan style casual. Aku sering menghabiskan waktu untuk mencari tempat yang santai dan nyaman dilihat oleh mata. ",
+        "bio": "Aku adalah siswa sekolah Menengah Kejuruan, Aku memiliki hooby membuat sketsa dan web, selain itu aku juga sangat tertarik dengan gaya casual. Aku sering menghabiskan waktu untuk mencari tempat yang santai dan nyaman dilihat oleh mata. ",
         "socials": {
             "tiktok": "https://www.tiktok.com/@afada.2nd?is_from_webapp=1&sender_device=pc",
             "whatsapp": "https://wa.me/62895355095040?text=hai,%20aku20%mampir20%lewat20%WEB",
@@ -16,7 +16,10 @@
             "photos": [
                 "https://i.imgur.com/sVNW9SO.jpeg",
                 "https://i.imgur.com/C3v85kP.jpeg",
-                "https://i.imgur.com/D3Nsoov.jpeg"
+                
+                "https://i.imgur.com/IVgu8Jx.jpeg",
+                "https://i.imgur.com/2y1hpKF.jpeg",
+                "https://i.imgur.com/I90QjBX.jpeg"
             ]
         },
         {
@@ -45,10 +48,6 @@
         },
         {
             "src": "https://i.imgur.com/sVNW9SO.jpeg",
-            "category": "coffe"
-        },
-        {
-            "src": "https://i.imgur.com/D3Nsoov.jpeg",
             "category": "coffe"
         },
         {
